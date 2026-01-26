@@ -1,0 +1,5 @@
+name = "lab-theme"
+license = "MIT"
+tags = ["lab", "academic", "research"]
+min_version = "0.41.0"
+author = "Lab Team"

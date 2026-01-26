@@ -1,0 +1,13 @@
+<div class="project-card{{ if .Get "image" }} {{ if eq (.Get "image-position") "right" }}image-right{{ else }}image-left{{ end }}{{ end }}">
+  {{ if .Get "image" }}
+  <div class="project-card-image">
+    <img src="{{ .Get "image" }}" alt="{{ .Get "title" | default "Project image" }}">
+  </div>
+  {{ end }}
+  <div class="project-card-content">
+    {{ if .Get "title" }}
+    <h3>{{ .Get "title" }}</h3>
+    {{ end }}
+    {{ .Inner }}
+  </div>
+</div>

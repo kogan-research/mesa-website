@@ -1,0 +1,12 @@
+<div class="team-member">
+  {{ if .Get "name" }}
+  <h3>{{ .Get "name" }}</h3>
+  {{ end }}
+  {{ if .Get "title" }}
+  <div class="title">{{ .Get "title" }}</div>
+  {{ end }}
+  {{ if .Get "email" }}
+  <div class="email"><a href="mailto:{{ .Get "email" }}">{{ .Get "email" }}</a></div>
+  {{ end }}
+  {{ .Inner }}
+</div>
