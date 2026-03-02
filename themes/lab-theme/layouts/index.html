@@ -1,7 +1,14 @@
 {{ define "main" }}
 <section class="hero">
     <div class="container">
-        <h1>{{ .Site.Params.labName | default .Site.Title }}</h1>
+        <div class="hero-header">
+            {{ if .Site.Params.logo }}
+            <div class="hero-logo">
+                <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Params.labName | default .Site.Title }}">
+            </div>
+            {{ end }}
+            <h1>{{ .Site.Params.labName | default .Site.Title }}</h1>
+        </div>
         <p class="lead">{{ .Site.Params.labDescription }}</p>
     </div>
 </section>

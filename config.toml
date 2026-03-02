@@ -2,12 +2,15 @@ baseURL = 'https://yourlab.example.com/'
 languageCode = 'en-us'
 title = 'Lab Name'
 theme = 'lab-theme'
+relativeURLs = false
+canonifyURLs = true
 
 [params]
   labName = "Lab Name"
   labDescription = "Advancing research in [Your Field]"
   email = "contact@yourlab.example.com"
   institution = "Your University"
+  logo = "/images/logo.jpg"  # Path to your logo image (place logo in static/images/)
   
 [menu]
   [[menu.main]]
