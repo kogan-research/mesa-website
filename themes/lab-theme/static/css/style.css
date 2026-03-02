@@ -342,34 +342,47 @@ body.page-home main {
     letter-spacing: 0.02em;
 }
 
-.hero--research {
+.hero--research,
+.hero--simple {
     min-height: 60vh;
 }
 
-.hero--research .hero-inner {
+.hero--research .hero-inner,
+.hero--simple .hero-inner {
     align-items: flex-end;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
 }
 
-.hero--research .hero-inner--left {
+.hero--research .hero-inner--left,
+.hero--simple .hero-inner--left {
     align-self: flex-end;
     padding-bottom: 3.5rem;
 }
 
-.hero--research .hero-kicker {
+.hero--research .hero-kicker,
+.hero--simple .hero-kicker {
     color: var(--terracotta);
-    font-weight: 700;
-    font-size: 1.05rem;
+    font-weight: 800;
+    font-size: 1.2rem;
     letter-spacing: 0.35em;
     white-space: nowrap;
 }
 
-.hero--research .hero-title {
+.hero--research .hero-title,
+.hero--simple .hero-title {
     color: #fff;
-    font-size: clamp(2.5rem, 4.5vw, 4rem);
-    font-weight: 700;
+    font-size: clamp(3rem, 5vw, 4.75rem);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.hero--simple .hero-tagline {
+    font-size: 0.95rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
     white-space: nowrap;
 }
 
@@ -918,20 +931,16 @@ body.page-home main {
 }
 
 .team-section h2 {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     text-transform: none;
     letter-spacing: 0.02em;
-    color: white;
+    color: #111;
 }
 
 .team-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
-}
-
-.team-cards--compact {
-    max-width: 280px;
 }
 
 .team-card {
@@ -945,13 +954,16 @@ body.page-home main {
     width: 140px;
     height: 140px;
     background: rgba(255, 255, 255, 0.2);
+    background-image: url("/images/mesa_about_placeholder.png");
+    background-size: cover;
+    background-position: center;
     border-radius: 6px;
     margin: 0 auto 1rem;
 }
 
 .team-card h3 {
     margin: 0.5rem 0 0.25rem;
-    color: white;
+    color: #111;
     font-size: 1rem;
     text-transform: none;
     letter-spacing: 0.02em;
@@ -962,28 +974,39 @@ body.page-home main {
     text-transform: uppercase;
     letter-spacing: 0.12em;
     margin-bottom: 0.5rem;
+    color: #111;
 }
 
 .team-card-bio {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: #111;
 }
 
 .alumni-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 3rem;
 }
 
-.alumni-item h4 {
-    margin-bottom: 0.35rem;
+.alumni-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.alumni-name {
+    font-weight: 700;
     font-size: 0.95rem;
+    color: #111;
 }
 
-.alumni-item p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.75);
+.alumni-role {
     font-size: 0.9rem;
+    color: #111;
+    text-align: right;
 }
 
 /* Publications */

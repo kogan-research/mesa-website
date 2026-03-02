@@ -1,24 +1,43 @@
 {{ define "main" }}
-<section class="hero hero--team">
+{{ $heroTitle := .Params.heroTitle }}
+{{ $isSimple := or $heroTitle .Params.heroKicker .Params.heroTagline }}
+<section class="hero hero--team{{ if $isSimple }} hero--simple{{ end }}">
     <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | relURL }}');"{{ end }}></div>
     <div class="container hero-inner hero-inner--left">
-        {{ with .Params.heroCardImage }}
-        <div class="hero-profile">
-            <img src="{{ . | relURL }}" alt="{{ $.Params.heroName | default $.Title }}">
-        </div>
-        {{ end }}
+        {{ if $isSimple }}
         <div class="hero-content">
-            <h1 class="hero-title">{{ .Params.heroName | default .Title }}</h1>
-            {{ with .Params.heroRole }}
-            <p class="hero-role">{{ . }}</p>
+            {{ with .Params.heroKicker }}
+            <p class="hero-kicker">{{ . }}</p>
+            {{ end }}
+            {{ with $heroTitle }}
+            <h1 class="hero-title">{{ . }}</h1>
+            {{ end }}
+            {{ with .Params.heroTagline }}
+            <p class="hero-tagline">{{ . }}</p>
             {{ end }}
             {{ with .Params.heroBio }}
             <p class="hero-lead">{{ . }}</p>
             {{ end }}
-            {{ with .Params.heroCta }}
-            <a class="btn btn--ghost" href="{{ .link | relURL }}">{{ .label }}</a>
-            {{ end }}
         </div>
+        {{ else }}
+            {{ with .Params.heroCardImage }}
+            <div class="hero-profile">
+                <img src="{{ . | relURL }}" alt="{{ $.Params.heroName | default $.Title }}">
+            </div>
+            {{ end }}
+            <div class="hero-content">
+                <h1 class="hero-title">{{ .Params.heroName | default .Title }}</h1>
+                {{ with .Params.heroRole }}
+                <p class="hero-role">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.heroBio }}
+                <p class="hero-lead">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.heroCta }}
+                <a class="btn btn--ghost" href="{{ .link | relURL }}">{{ .label }}</a>
+                {{ end }}
+            </div>
+        {{ end }}
     </div>
 </section>
 

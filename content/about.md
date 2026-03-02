@@ -1,46 +1,86 @@
 ---
-title: "About"
+title: "About Us"
+layout: "team"
+heroKicker: "ABOUT US"
+heroTitle: "The team behind MESA."
+heroTagline: ""
+heroImage: "/images/mesa_about_background.png"
 ---
 
-# About Our Lab
+<section class="team-section">
+  <h2>Lab Director</h2>
+  <div class="team-cards team-cards--compact">
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Marina Kogan</h3>
+      <p class="team-card-role">Lab Director</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+  </div>
+</section>
 
-Our lab focuses on [describe your research focus here]. We are dedicated to advancing knowledge and making meaningful contributions to [your field].
+<section class="team-section">
+  <h2>Graduate Students</h2>
+  <div class="team-cards">
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Khandaker Abrar Nadib</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Tasnim Rahman</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Thomas Greger</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+  </div>
+</section>
 
----
+<section class="team-section">
+  <h2>Undergraduate Students</h2>
+  <div class="team-cards team-cards--compact">
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Sarah Choe</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+  </div>
+</section>
 
-{{< card title="Mission" >}}
-[Your mission statement]
-
-Our mission is to [describe your mission in detail]. We strive to [goals and objectives].
-{{< /card >}}
-
----
-
-## Research Areas
-
-We conduct cutting-edge research across several key areas:
-
-{{< cards-grid >}}
-{{< card title="Area 1" image="/images/research-area-1.svg" image-position="left" >}}
-[Brief description of research area 1]
-{{< /card >}}
-
-{{< card title="Area 2" image="/images/research-area-2.svg" image-position="right" >}}
-[Brief description of research area 2]
-{{< /card >}}
-
-{{< card title="Area 3" image="/images/research-area-3.svg" image-position="left" >}}
-[Brief description of research area 3]
-{{< /card >}}
-{{< /cards-grid >}}
-
----
-
-## Lab Values
-
-{{< card title="Our Values" >}}
-- **Excellence**: We maintain the highest standards in our research
-- **Collaboration**: We believe in working together to achieve common goals
-- **Innovation**: We embrace new ideas and approaches
-- **Integrity**: We conduct research with honesty and transparency
-{{< /card >}}
+<section class="team-section">
+  <h2>MESA Lab Alumni</h2>
+  <div class="alumni-grid">
+    <div class="alumni-row">
+      <span class="alumni-name">Name</span>
+      <span class="alumni-role">Description</span>
+    </div>
+    <div class="alumni-row">
+      <span class="alumni-name">Name</span>
+      <span class="alumni-role">Description</span>
+    </div>
+    <div class="alumni-row">
+      <span class="alumni-name">Name</span>
+      <span class="alumni-role">Description</span>
+    </div>
+    <div class="alumni-row">
+      <span class="alumni-name">Name</span>
+      <span class="alumni-role">Description</span>
+    </div>
+    <div class="alumni-row">
+      <span class="alumni-name">Name</span>
+      <span class="alumni-role">Description</span>
+    </div>
+    <div class="alumni-row">
+      <span class="alumni-name">Name</span>
+      <span class="alumni-role">Description</span>
+    </div>
+  </div>
+</section>
