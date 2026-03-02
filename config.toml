@@ -5,6 +5,11 @@ theme = 'lab-theme'
 relativeURLs = false
 canonifyURLs = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   labName = "MESA LAB"
   labDescription = "Advancing research in [Your Field]"
@@ -14,33 +19,33 @@ canonifyURLs = true
   footerImage = "/images/mesa-rock-image.png"
   navLogo = "/images/mesa-rock-image.png"
   
-[menu]
-  [[menu.main]]
+[menus]
+  [[menus.main]]
     identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
-  [[menu.main]]
+  [[menus.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 2
-  [[menu.main]]
+    weight = 3
+  [[menus.main]]
     identifier = "research"
     name = "Research"
     url = "/research/"
-    weight = 3
-  [[menu.main]]
+    weight = 2
+  [[menus.main]]
     identifier = "publications"
     name = "Publications"
     url = "/publications/"
     weight = 4
-  [[menu.main]]
+  [[menus.main]]
     identifier = "team"
     name = "Team"
     url = "/team/"
     weight = 5
-  [[menu.main]]
+  [[menus.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
