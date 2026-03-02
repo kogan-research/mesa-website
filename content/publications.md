@@ -1,11 +1,12 @@
 ---
 title: "Publications"
 layout: "publications"
-heroTitle: "Featured Publications"
+heroKicker: "FEATURED PUBLICATIONS"
+heroTitle: "Academic scholarship and impact"
 heroCta:
   label: "For a complete list, find us on Google Scholar"
   link: "https://scholar.google.com"
-heroImage: "/images/hero-publications.jpg"
+heroImage: "/images/mesa_publications_background.png"
 ---
 
 <div class="publication-year">

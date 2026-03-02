@@ -378,6 +378,10 @@ body.page-home main {
     white-space: nowrap;
 }
 
+.hero--publications .hero-title {
+    white-space: nowrap;
+}
+
 .hero--simple .hero-tagline {
     font-size: 0.95rem;
     letter-spacing: 0.35em;
@@ -387,7 +391,26 @@ body.page-home main {
 }
 
 .hero--publications {
-    min-height: 45vh;
+    min-height: 60vh;
+}
+
+.hero--publications .hero-inner {
+    align-items: flex-end;
+}
+
+.hero--publications .hero-inner--left {
+    align-self: flex-end;
+    padding-bottom: 3.5rem;
+}
+
+.hero--publications .hero-kicker {
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 0.35em;
+}
+
+.hero--publications .hero-media {
+    background-position: center;
 }
 
 .home-content .container {

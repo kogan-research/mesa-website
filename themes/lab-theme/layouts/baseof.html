@@ -16,7 +16,7 @@
     {{ else if .File }}
         {{ $pageKey = .File.BaseFileName }}
     {{ end }}
-    <nav class="navbar {{ if or (eq $pageKey "home") (eq $pageKey "research") (eq $pageKey "team") (eq $pageKey "about") }}navbar--overlay{{ else }}navbar--solid{{ end }}">
+    <nav class="navbar {{ if or (eq $pageKey "home") (eq $pageKey "research") (eq $pageKey "team") (eq $pageKey "about") (eq $pageKey "publications") }}navbar--overlay{{ else }}navbar--solid{{ end }}">
         <div class="container">
             {{ $brand := .Site.Params.labName | default .Site.Title }}
             <a class="nav-brand" href="{{ "/" | relURL }}">
