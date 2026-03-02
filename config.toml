@@ -6,11 +6,13 @@ relativeURLs = false
 canonifyURLs = true
 
 [params]
-  labName = "Lab Name"
+  labName = "MESA LAB"
   labDescription = "Advancing research in [Your Field]"
   email = "contact@yourlab.example.com"
   institution = "Your University"
   logo = "/images/logo.jpg"  # Path to your logo image (place logo in static/images/)
+  footerImage = "/images/mesa-rock-image.png"
+  navLogo = "/images/mesa-rock-image.png"
   
 [menu]
   [[menu.main]]

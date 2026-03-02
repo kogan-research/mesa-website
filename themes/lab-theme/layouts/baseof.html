@@ -6,17 +6,27 @@
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
-<body>
-    <nav class="navbar">
+<body class="page-{{ if .IsHome }}home{{ else if .File }}{{ .File.BaseFileName }}{{ else }}default{{ end }}">
+    {{ $pageKey := "" }}
+    {{ if .IsHome }}
+        {{ $pageKey = "home" }}
+    {{ else if .File }}
+        {{ $pageKey = .File.BaseFileName }}
+    {{ end }}
+    <nav class="navbar {{ if or (eq $pageKey "home") (eq $pageKey "research") (eq $pageKey "team") }}navbar--overlay{{ else }}navbar--solid{{ end }}">
         <div class="container">
-            <div class="nav-brand">
-                <a href="{{ "/" | relURL }}">
-                    <span class="nav-brand-text">{{ .Site.Params.labName | default .Site.Title }}</span>
-                </a>
-            </div>
+            {{ $brand := .Site.Params.labName | default .Site.Title }}
+            <a class="nav-brand" href="{{ "/" | relURL }}">
+                {{ if .Site.Params.navLogo }}
+                <img class="nav-brand-logo" src="{{ .Site.Params.navLogo | relURL }}" alt="{{ .Site.Params.labName | default .Site.Title }}">
+                {{ else if .Site.Params.logo }}
+                <img class="nav-brand-logo" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Params.labName | default .Site.Title }}">
+                {{ end }}
+                <span class="nav-brand-text">{{ replace $brand " " "<br>" | safeHTML }}</span>
+            </a>
             <ul class="nav-menu">
                 {{ range .Site.Menus.main }}
                 <li><a href="{{ .URL | relURL }}" {{ if eq $.RelPermalink .URL }}class="active"{{ end }}>{{ .Name }}</a></li>
@@ -29,10 +39,32 @@
         {{ block "main" . }}{{ end }}
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; {{ now.Year }} {{ .Site.Params.labName | default .Site.Title }}. All rights reserved.</p>
-            <p>{{ .Site.Params.institution }}</p>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                {{ if .Site.Params.footerImage }}
+                <img class="footer-logo footer-logo--rock" src="{{ .Site.Params.footerImage | relURL }}" alt="{{ .Site.Params.labName | default .Site.Title }}">
+                {{ else if .Site.Params.logo }}
+                <img class="footer-logo" src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Params.labName | default .Site.Title }}">
+                {{ end }}
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    {{ if .Site.Params.institution }}
+                    <p>{{ .Site.Params.institution }}</p>
+                    {{ end }}
+                    {{ if .Site.Params.email }}
+                    <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
         </div>
     </footer>
 

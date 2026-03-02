@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="hero hero--team">
+    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | relURL }}');"{{ end }}></div>
+    <div class="container hero-inner hero-inner--left">
+        {{ with .Params.heroCardImage }}
+        <div class="hero-profile">
+            <img src="{{ . | relURL }}" alt="{{ $.Params.heroName | default $.Title }}">
+        </div>
+        {{ end }}
+        <div class="hero-content">
+            <h1 class="hero-title">{{ .Params.heroName | default .Title }}</h1>
+            {{ with .Params.heroRole }}
+            <p class="hero-role">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.heroBio }}
+            <p class="hero-lead">{{ . }}</p>
+            {{ end }}
+            {{ with .Params.heroCta }}
+            <a class="btn btn--ghost" href="{{ .link | relURL }}">{{ .label }}</a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section section--team">
+    <div class="container">
+        {{ .Content }}
+    </div>
+</section>
+{{ end }}

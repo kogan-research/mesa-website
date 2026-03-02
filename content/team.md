@@ -1,53 +1,78 @@
 ---
 title: "Team"
+layout: "team"
+heroName: "Marina Kogan"
+heroRole: "Lab Director"
+heroBio: "Short bio description"
+heroCardImage: "/images/logo.jpg"
+heroCta:
+  label: "Download My CV"
+  link: "#"
+heroImage: "/images/hero-team.jpg"
 ---
 
-# Our Team
+<section class="team-section">
+  <h2>Graduate Students</h2>
+  <div class="team-cards">
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Khandaker Abrar Nadib</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Tasnim Rahman</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Thomas Greger</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+  </div>
+</section>
 
-We are a diverse group of researchers working together to advance knowledge in [your field]. Our team includes faculty, graduate students, and undergraduate researchers.
+<section class="team-section">
+  <h2>Undergraduate Students</h2>
+  <div class="team-cards team-cards--compact">
+    <div class="team-card">
+      <div class="team-card-image"></div>
+      <h3>Sarah Choe</h3>
+      <p class="team-card-role">Description</p>
+      <p class="team-card-bio">Short bio description</p>
+    </div>
+  </div>
+</section>
 
----
-
-## Principal Investigator
-
-{{< team-member name="Dr. Name" title="Professor" email="name@university.edu" >}}
-**Research interests:** [interests]
-
-[Brief bio or description of the PI's background and research focus]
-{{< /team-member >}}
-
----
-
-## Graduate Students
-
-<div class="team-grid">
-{{< team-member name="Student Name" title="PhD Student" email="student@university.edu" >}}
-**Research focus:** [focus]
-
-[Brief description of their research or background]
-{{< /team-member >}}
-
-{{< team-member name="Student Name 2" title="Master's Student" email="student2@university.edu" >}}
-**Research focus:** [focus]
-
-[Brief description of their research or background]
-{{< /team-member >}}
-</div>
-
----
-
-## Undergraduate Students
-
-<div class="team-grid">
-{{< team-member name="Student Name" title="Research Assistant" >}}
-**Research focus:** [focus]
-
-[Brief description of their work in the lab]
-{{< /team-member >}}
-</div>
-
----
-
-## Alumni
-
-We are proud of our lab alumni who have gone on to [career paths or achievements].
+<section class="team-section">
+  <h2>MESA Lab Alumni</h2>
+  <div class="alumni-grid">
+    <div class="alumni-item">
+      <h4>Name</h4>
+      <p>Description</p>
+    </div>
+    <div class="alumni-item">
+      <h4>Name</h4>
+      <p>Description</p>
+    </div>
+    <div class="alumni-item">
+      <h4>Name</h4>
+      <p>Description</p>
+    </div>
+    <div class="alumni-item">
+      <h4>Name</h4>
+      <p>Description</p>
+    </div>
+    <div class="alumni-item">
+      <h4>Name</h4>
+      <p>Description</p>
+    </div>
+    <div class="alumni-item">
+      <h4>Name</h4>
+      <p>Description</p>
+    </div>
+  </div>
+</section>

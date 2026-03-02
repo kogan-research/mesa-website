@@ -1,21 +1,22 @@
 {{ define "main" }}
-<section class="hero">
-    <div class="container">
-        <div class="hero-header">
-            {{ if .Site.Params.logo }}
-            <div class="hero-logo">
-                <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Params.labName | default .Site.Title }}">
-            </div>
+<section class="hero hero--home">
+    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | relURL }}');"{{ end }}></div>
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ .Params.heroTitle | default (.Site.Params.labName | default .Site.Title) }}</h1>
+            {{ with .Params.heroTagline }}
+            <p class="hero-tagline">{{ . }}</p>
             {{ end }}
-            <h1>{{ .Site.Params.labName | default .Site.Title }}</h1>
+            <p class="hero-lead">{{ .Params.heroLead | default .Site.Params.labDescription }}</p>
         </div>
-        <p class="lead">{{ .Site.Params.labDescription }}</p>
     </div>
 </section>
 
-<section class="content">
+{{ if .Content }}
+<section class="home-content">
     <div class="container">
         {{ .Content }}
     </div>
 </section>
+{{ end }}
 {{ end }}
