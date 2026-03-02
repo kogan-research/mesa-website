@@ -348,7 +348,8 @@ body.page-home main {
 }
 
 .hero--research .hero-inner,
-.hero--simple .hero-inner {
+.hero--simple .hero-inner,
+.hero--publications .hero-inner {
     align-items: flex-end;
     flex-direction: column;
     align-items: flex-start;
@@ -356,7 +357,8 @@ body.page-home main {
 }
 
 .hero--research .hero-inner--left,
-.hero--simple .hero-inner--left {
+.hero--simple .hero-inner--left,
+.hero--publications .hero-inner--left {
     align-self: flex-end;
     padding-bottom: 3.5rem;
 }
@@ -392,15 +394,6 @@ body.page-home main {
 
 .hero--publications {
     min-height: 60vh;
-}
-
-.hero--publications .hero-inner {
-    align-items: flex-end;
-}
-
-.hero--publications .hero-inner--left {
-    align-self: flex-end;
-    padding-bottom: 3.5rem;
 }
 
 .hero--publications .hero-kicker {

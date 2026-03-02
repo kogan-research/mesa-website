@@ -10,6 +10,31 @@ heroImage: "/images/mesa_publications_background.png"
 ---
 
 <div class="publication-year">
+  <h2>2026</h2>
+  <div class="publication-entry">
+    <p>publication information</p>
+    <div class="publication-actions">
+      <a class="btn btn--ghost" href="#">Details</a>
+      <a class="btn btn--secondary" href="#">DOI</a>
+    </div>
+  </div>
+  <div class="publication-entry">
+    <p>publication information</p>
+    <div class="publication-actions">
+      <a class="btn btn--ghost" href="#">Details</a>
+      <a class="btn btn--secondary" href="#">DOI</a>
+    </div>
+  </div>
+  <div class="publication-entry">
+    <p>publication information</p>
+    <div class="publication-actions">
+      <a class="btn btn--ghost" href="#">Details</a>
+      <a class="btn btn--secondary" href="#">DOI</a>
+    </div>
+  </div>
+</div>
+
+<div class="publication-year">
   <h2>2025</h2>
   <div class="publication-entry">
     <p>publication information</p>
