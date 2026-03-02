@@ -873,6 +873,7 @@ body.page-home main {
     min-height: 250px;
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .pillar-card h3 {
@@ -881,6 +882,13 @@ body.page-home main {
     font-size: 1.25rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.pillar-desc {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
 }
 
 .pillar-row--sand .pillar-card {

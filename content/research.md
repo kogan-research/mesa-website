@@ -14,6 +14,7 @@ heroImage: "/images/mesa_research.png"
     </div>
     <div class="pillar-card">
       <h3>Misinformation</h3>
+      <p class="pillar-desc">[description]</p>
     </div>
   </div>
   <div class="pillar-row pillar-row--blue pillar-row--reverse">
@@ -22,6 +23,7 @@ heroImage: "/images/mesa_research.png"
     </div>
     <div class="pillar-card">
       <h3>Misinformation</h3>
+      <p class="pillar-desc">[description]</p>
     </div>
   </div>
   <div class="pillar-row pillar-row--terracotta">
@@ -30,6 +32,7 @@ heroImage: "/images/mesa_research.png"
     </div>
     <div class="pillar-card">
       <h3>Misinformation</h3>
+      <p class="pillar-desc">[description]</p>
     </div>
   </div>
   <div class="pillar-row pillar-row--clay pillar-row--reverse">
@@ -38,6 +41,7 @@ heroImage: "/images/mesa_research.png"
     </div>
     <div class="pillar-card">
       <h3>Misinformation</h3>
+      <p class="pillar-desc">[description]</p>
     </div>
   </div>
 </div>
