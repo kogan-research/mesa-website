@@ -95,10 +95,37 @@ Description of their work.
 - Update research interests
 - Modify methodology descriptions
 
-### Publications Page (`content/publications.md`)
-- Add new publications
-- Organize by year
-- Add links to papers
+### Publications List (`content/publications/_index.md`)
+
+Publications use a VDL-style layout (thumbnail optional, title, authors, venue, optional award). Edit the `publication_sections` list in the front matter.
+
+**Per-section:** `heading` (e.g. "Peer-Reviewed Journal and Conference Papers") and `items` (list of publications).
+
+**Per publication (each item):**
+- `title` – Paper title (required)
+- `url` – Link to the paper’s detail page (e.g. `"/publications/my-paper/"`) or external URL
+- `authors` – Author list; use HTML for links if needed
+- `venue` – Venue and year, e.g. `"IEEE VIS, 2026"`
+- `award` – Optional, e.g. `"Best Paper Award"`
+- `image` – Optional thumbnail path, e.g. `"/images/pubs/paper1.png"`
+
+Add sections (e.g. "Commentary", "Selected Posters") by adding more entries to `publication_sections`.
+
+### Individual Publication Page (VDL-style detail)
+
+To add a dedicated page for a paper (like [VDL’s paper pages](https://vdl.sci.utah.edu/publications/2025_vis_revisit/)):
+
+1. Create a new file under `content/publications/`, e.g. `content/publications/my-paper-slug.md`.
+2. Set `layout: "publication-single"` and front matter:
+   - `title` – Paper title
+   - `image` – Path to the paper figure/screenshot (optional)
+   - `citation` – Formatted citation (markdown allowed)
+   - `bibtex` – Raw BibTeX string (use `|` for multiline)
+   - `resources` – List of `{ label: "Publication (PDF)", url: "https://..." }`
+   - `project_url` – Link to project website (optional)
+   - `video_url` – Link to video (optional)
+3. Write the **abstract** (and any extra text) in the body of the file (e.g. under `## Abstract`).
+4. In `content/publications/_index.md`, set that paper’s `url` to the new page: `"/publications/my-paper-slug/"`.
 
 ### Contact Page (`content/contact.md`)
 - Update lab location

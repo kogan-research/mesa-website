@@ -1,0 +1,52 @@
+{{ define "main" }}
+<article class="publication-single">
+  <header class="publication-single-header">
+    <div class="container">
+      <p class="publication-single-back"><a href="{{ "/publications/" | relURL }}">← Publications</a></p>
+      <h1 class="publication-single-title">{{ .Title }}</h1>
+      {{ with .Params.image }}
+      <div class="publication-single-hero">
+        <img src="{{ . | relURL }}" alt="" width="800" height="500">
+      </div>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="publication-single-content content">
+    <div class="container container--narrow">
+      {{ .Content }}
+
+      {{ with .Params.citation }}
+      <h2 id="citation">Citation</h2>
+      <div class="publication-citation">{{ . | markdownify }}</div>
+      {{ end }}
+
+      {{ with .Params.bibtex }}
+      <h2 id="bibtex">BibTeX</h2>
+      <pre class="publication-bibtex"><code>{{ . | htmlEscape }}</code></pre>
+      {{ end }}
+
+      {{ with .Params.resources }}
+      <h2 id="resources">Resources</h2>
+      <ul class="publication-resources">
+        {{ range . }}
+        <li><a href="{{ .url }}">{{ .label }}</a></li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
+      {{ with .Params.project_url }}
+      <h2 id="project">Project Website</h2>
+      <ul class="publication-resources">
+        <li><a href="{{ . }}">Project Website</a></li>
+      </ul>
+      {{ end }}
+
+      {{ with .Params.video_url }}
+      <h2 id="video">Video</h2>
+      <p><a href="{{ . }}">Watch video</a></p>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

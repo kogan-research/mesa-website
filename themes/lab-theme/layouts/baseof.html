@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
-<body class="page-{{ if .IsHome }}home{{ else if .File }}{{ .File.BaseFileName }}{{ else }}default{{ end }}">
+<body class="page-{{ if .IsHome }}home{{ else if .Section }}{{ .Section }}{{ else if .File }}{{ .File.BaseFileName }}{{ else }}default{{ end }}">
     {{ $pageKey := "" }}
     {{ if .IsHome }}
         {{ $pageKey = "home" }}
+    {{ else if .Section }}
+        {{ $pageKey = .Section }}
     {{ else if .File }}
         {{ $pageKey = .File.BaseFileName }}
     {{ end }}

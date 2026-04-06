@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="hero hero--publications">
+    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | relURL }}');"{{ end }}></div>
+    <div class="container hero-inner hero-inner--left">
+        <div class="hero-content">
+            {{ with .Params.heroKicker }}
+            <p class="hero-kicker">{{ . }}</p>
+            {{ end }}
+            <h1 class="hero-title">{{ .Params.heroTitle | default .Title }}</h1>
+            {{ with .Params.heroCta }}
+            <a class="btn btn--primary" href="{{ .link }}">{{ .label }}</a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<section class="section section--publications">
+    <div class="container container--publications">
+        {{ with .Param "publication_sections" }}
+        {{ range . }}
+        <h2 class="publication-section-title">{{ .heading }}</h2>
+        <ul class="publication-list">
+            {{ range .items }}
+            <li class="publication-item">
+                {{ if .image }}
+                <div class="publication-thumb">
+                    {{ if .url }}<a href="{{ .url }}" aria-hidden="true" tabindex="-1">{{ end }}
+                    <img src="{{ .image | relURL }}" alt="" loading="lazy" width="160" height="100">
+                    {{ if .url }}</a>{{ end }}
+                </div>
+                {{ end }}
+                <div class="publication-body">
+                    <p class="publication-authors">{{ .authors | safeHTML }}</p>
+                    <p class="publication-title">
+                        {{ if .url }}<a href="{{ .url }}">{{ end }}{{ .title }}{{ if .url }}</a>{{ end }}
+                    </p>
+                    {{ with .venue }}<p class="publication-venue">{{ . }}</p>{{ end }}
+                    {{ with .award }}
+                    <p class="publication-award">{{ . }}</p>
+                    {{ end }}
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+        {{ else }}
+        <p class="publication-empty">No publications configured. Edit <code>content/publications/_index.md</code> and add <code>publication_sections</code> to the front matter.</p>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

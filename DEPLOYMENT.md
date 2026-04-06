@@ -31,6 +31,19 @@ You should see:
 
 ## Deployment Options
 
+### Option 1: GitHub Pages (Recommended)
+
+This repo includes a GitHub Actions workflow that builds and deploys the site to GitHub Pages on every push to `main`.
+
+1. **Update `baseURL`** in `config.toml`:
+   - For a user/organization site: `https://<username>.github.io/`
+   - For a project site: `https://<username>.github.io/<repo>/`
+2. **Push to GitHub** (main branch).
+3. **Enable Pages** in GitHub:
+   - Settings → Pages → Build and deployment → Source: **GitHub Actions**
+
+The workflow file lives at `.github/workflows/deploy.yml`.
+
 ### Option 1: Traditional Web Server (Apache/Nginx)
 
 1. **Build the site:**
@@ -54,7 +67,7 @@ You should see:
    chmod -R 755 /var/www/html/
    ```
 
-### Option 2: GitHub Pages (Free)
+### Option 2: GitHub Pages (Manual)
 
 1. **Create a GitHub repository**
 
