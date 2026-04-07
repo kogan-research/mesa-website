@@ -1,6 +1,6 @@
 baseURL = 'https://kogan-research.github.io/mesa-website/'
 languageCode = 'en-us'
-title = 'Lab Name'
+title = 'M.E.S.A. LAB'
 theme = 'lab-theme'
 relativeURLs = false
 canonifyURLs = true
