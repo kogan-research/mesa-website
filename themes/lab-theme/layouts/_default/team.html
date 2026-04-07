@@ -2,7 +2,7 @@
 {{ $heroTitle := .Params.heroTitle }}
 {{ $isSimple := or $heroTitle .Params.heroKicker .Params.heroTagline }}
 <section class="hero hero--team{{ if $isSimple }} hero--simple{{ end }}">
-    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | relURL }}');"{{ end }}></div>
+    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | absURL }}');"{{ end }}></div>
     <div class="container hero-inner hero-inner--left">
         {{ if $isSimple }}
         <div class="hero-content">
