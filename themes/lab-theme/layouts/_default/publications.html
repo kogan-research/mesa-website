@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="hero hero--publications">
-    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | strings.TrimPrefix \"/\" | relURL }}');"{{ end }}></div>
+    <div class="hero-media"{{ with .Params.heroImage }} style="background-image: url('{{ . | strings.TrimPrefix "/" | relURL }}');"{{ end }}></div>
     <div class="container hero-inner hero-inner--left">
         <div class="hero-content">
             {{ with .Params.heroKicker }}
