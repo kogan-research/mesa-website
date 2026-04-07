@@ -1,9 +1,8 @@
-baseURL = 'https://kogan-research.github.io/mesa-webpage/'
+baseURL = 'https://kogan-research.github.io/mesa-website/'
 languageCode = 'en-us'
 title = 'Lab Name'
 theme = 'lab-theme'
-# Use relative URLs so CSS and assets load when viewing at localhost (e.g. hugo server)
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = true
 
 [markup]
