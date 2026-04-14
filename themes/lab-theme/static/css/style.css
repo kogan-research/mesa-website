@@ -975,14 +975,31 @@ body.page-home main {
 }
 
 .team-card-image {
-    width: 140px;
-    height: 140px;
+    width: 110px;
+    height: 110px;
     background: rgba(255, 255, 255, 0.2);
     background-image: url("/images/mesa_about_placeholder.png");
     background-size: cover;
     background-position: center;
     border-radius: 6px;
     margin: 0 auto 1rem;
+    overflow: hidden;
+}
+
+.team-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+
+.team-card-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
 }
 
 .team-card h3 {
