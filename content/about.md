@@ -35,9 +35,11 @@ heroImage: "/images/mesa_about_background.png"
       <p class="team-card-bio">Short bio description</p>
     </div>
     <div class="team-card">
-      <div class="team-card-image"></div>
+      <div class="team-card-image team-card-image--photo">
+        {{< img src="images/team/tg.jpg" alt="Thomas Greger" class="team-card-photo" >}}
+      </div>
       <h3>Thomas Greger</h3>
-      <p class="team-card-role">Description</p>
+      <p class="team-card-role">PhD Student</p>
       <p class="team-card-bio">Short bio description</p>
     </div>
   </div>
