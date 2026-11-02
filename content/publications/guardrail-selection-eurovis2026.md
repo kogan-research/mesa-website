@@ -1,6 +1,7 @@
 ---
 title: "Guardrail Selection in Line Charts to Contextualize Persuasive Visualizations"
 layout: "publication-single"
+image: "/images/pubs/guardrail-conditions.png"
 doi: "https://doi.org/10.1111/cgf.70460"
 citation: "Khandaker Abrar Nadib, Marina Kogan, Alexander Lex, Maxim Lisnic. **Guardrail Selection in Line Charts to Contextualize Persuasive Visualizations.** Computer Graphics Forum (EuroVis), 45(3): e70460, 2026."
 bibtex: |

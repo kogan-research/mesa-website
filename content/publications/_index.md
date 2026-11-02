@@ -12,6 +12,7 @@ publication_sections:
   - heading: "Peer-Reviewed Journal and Conference Papers"
     items:
       - title: "Guardrail Selection in Line Charts to Contextualize Persuasive Visualizations"
+        image: "/images/pubs/guardrail-conditions.png"
         url: "/publications/guardrail-selection-eurovis2026/"
         authors: "Khandaker Abrar Nadib, Marina Kogan, Alexander Lex, Maxim Lisnic"
         venue: "Computer Graphics Forum (EuroVis), 45(3): e70460, 2026"
