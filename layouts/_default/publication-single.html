@@ -1,4 +1,16 @@
 {{ define "main" }}
+{{ with site.GetPage "/publications" }}
+<section class="hero hero--publications hero--publication-detail">
+  {{ with .Params.heroImage }}
+  <img class="hero-media publication-banner-image" src="{{ . | strings.TrimPrefix "/" | absURL }}" alt="">
+  {{ end }}
+  <div class="container hero-inner hero-inner--left">
+    <div class="hero-content">
+      {{ with .Params.heroKicker }}<p class="hero-kicker">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 <article class="publication-single">
   <header class="publication-single-header">
     <div class="container">
