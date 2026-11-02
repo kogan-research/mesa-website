@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Installs the pinned Hugo Extended binary if needed, then starts the local preview server.
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+HUGO="$("${ROOT}/scripts/ensure-hugo.sh")"
+
+cd "${ROOT}"
+exec "${HUGO}" server --buildDrafts --baseURL http://localhost:1313/ "$@"

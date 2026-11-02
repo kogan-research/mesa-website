@@ -129,10 +129,9 @@ a preview site. A lack of PR checks is not proof that the page builds.
 
 ## Optional: Edit and Preview Locally
 
-Install Git and [Hugo Extended](https://gohugo.io/installation/). The deployment
-workflow uses Hugo Extended **0.154.5**; use that version when matching CI exactly.
-On macOS, `brew install hugo` installs the current Homebrew version, which may
-differ from CI.
+You only need Git. The first time you run `./serve`, it downloads the same Hugo
+Extended version used in CI (**0.154.5**) into a local `.hugo/` folder. No Homebrew,
+uv, or global Hugo install is required on macOS or Linux.
 
 Copy the lab repository's HTTPS URL from GitHub's **Code** menu, then run:
 
@@ -142,7 +141,7 @@ cd <cloned-folder>
 git switch main
 git pull --ff-only origin main
 git switch -c profile/jane-smith
-hugo server --buildDrafts --baseURL http://localhost:1313/
+./serve
 ```
 
 Replace the angle-bracket placeholders before running the commands. Open
@@ -152,7 +151,7 @@ the preview as you save. Stop the server with `Ctrl+C`.
 Before submitting, run the production build and commit only your source changes:
 
 ```bash
-hugo --minify
+./build.sh
 git diff --check
 git diff -- content/about.md
 git status --short
@@ -163,8 +162,8 @@ git push -u origin profile/jane-smith
 
 Omit the image path from `git add` if you did not add or replace a photo. If
 working without lab repository write access, clone your fork instead and open
-the PR against the lab repository. Never commit generated `public/` or
-`resources/_gen/` files. Open the PR on GitHub using the steps above.
+the PR against the lab repository. Never commit generated `public/`,
+`resources/_gen/`, or `.hugo/` files. Open the PR on GitHub using the steps above.
 
 ## Before Requesting Review
 
