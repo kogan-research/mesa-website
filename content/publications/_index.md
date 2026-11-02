@@ -11,6 +11,10 @@ heroImage: "/images/mesa_publications_background.png"
 publication_sections:
   - heading: "Peer-Reviewed Journal and Conference Papers"
     items:
+      - title: "Guardrail Selection in Line Charts to Contextualize Persuasive Visualizations"
+        url: "/publications/guardrail-selection-eurovis2026/"
+        authors: "Khandaker Abrar Nadib, Marina Kogan, Alexander Lex, Maxim Lisnic"
+        venue: "Computer Graphics Forum (EuroVis), 45(3): e70460, 2026"
       - title: "From Protests on the Streets to a War in the East: Evolution of Discourse in a Prolonged Crisis"
         image: "/images/pubs/DiscourseVolatilityCSCW2025.png"
         url: "/publications/discourse-volatility-cscw2025/"
