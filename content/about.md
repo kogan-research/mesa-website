@@ -26,9 +26,9 @@ heroImage: "/images/mesa_about_background.png"
       <div class="team-card-image team-card-image--photo">
         {{< img src="images/team/kan.jpg" alt="Khandaker Abrar Nadib" class="team-card-photo" >}}
       </div>
-      <h3>Khandaker Abrar Nadib</h3>
+      <h3><a href="https://abrarnad.github.io/">Khandaker Abrar Nadib</a></h3>
       <p class="team-card-role">PhD Student</p>
-      <p class="team-card-bio">Abrar (pronounced "aabraar") is a thrid-year PhD student in the Kahlert School of Computing at the University of Utah, co-advised by Marina Kogan and Alexander Lex. His research sits at the intersection of Information Visualization, Human-Computer interaction, and human-centered AI. He examines how visualization design and context shape people’s reasoning about data, and designs and systems that help visualization designers and readers draw evidence-grounded.</p>
+      <p class="team-card-bio">Abrar (pronounced "aabraar") is a thrid-year PhD student in the Kahlert School of Computing at the University of Utah, co-advised by Marina Kogan and Alexander Lex. His research sits at the intersection of Information Visualization, Human-Computer interaction, and human-centered AI. He examines how visualization design and context shape people’s reasoning about data, and designs and systems that help visualization designers and readers draw evidence-grounded conclusions.</p>
     </div>
     <div class="team-card">
       <div class="team-card-image"></div>
