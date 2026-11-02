@@ -30,7 +30,7 @@ heroImage: "/images/mesa_about_background.png"
     </div>
     <div class="team-card">
       <div class="team-card-image team-card-image--photo">
-        {{< img src="images/team/trn.jpg" alt="Thomas Greger" class="team-card-photo" >}}
+        {{< img src="images/team/trn.jpg" alt="Tasnim Rahman" class="team-card-photo" >}}
       </div>
       <h3>Tasnim Rahman</h3>
       <p class="team-card-role">PhD Student</p>
