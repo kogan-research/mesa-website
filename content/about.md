@@ -31,10 +31,12 @@ heroImage: "/images/mesa_about_background.png"
       <p class="team-card-bio">Abrar (pronounced "aabraar") is a thrid-year PhD student in the Kahlert School of Computing at the University of Utah, co-advised by Marina Kogan and Alexander Lex. His research sits at the intersection of Information Visualization, Human-Computer interaction, and human-centered AI. He examines how visualization design and context shape people’s reasoning about data, and designs and systems that help visualization designers and readers draw evidence-grounded conclusions.</p>
     </div>
     <div class="team-card">
-      <div class="team-card-image"></div>
+      <div class="team-card-image team-card-image--photo">
+        {{< img src="images/team/trn.jpg" alt="Tasnim Rahman" class="team-card-photo" >}}
+      </div>
       <h3>Tasnim Rahman</h3>
-      <p class="team-card-role">Description</p>
-      <p class="team-card-bio">Short bio description</p>
+      <p class="team-card-role">PhD Student</p>
+      <p class="team-card-bio">Third-year PhD student in the Kahlert School of Computing at the University of Utah, working in social computing. Her research examines state-sponsored information operations on social media: how coordinated campaigns adapt their behavior, coordination structure, and narratives over time, and how they shape the information environment by mobilizing media sources of varying credibility.</p>
     </div>
     <div class="team-card">
       <div class="team-card-image team-card-image--photo">
