@@ -11,10 +11,12 @@ heroImage: "/images/mesa_about_background.png"
   <h2>Lab Director</h2>
   <div class="team-cards team-cards--compact">
     <div class="team-card">
-      <div class="team-card-image"></div>
-      <h3>Marina Kogan</h3>
+      <div class="team-card-image team-card-image--photo">
+        {{< img src="images/team/mk.jpg" alt="Marina Kogan" class="team-card-photo" >}}
+      </div>
+<h3>Marina Kogan</h3>
       <p class="team-card-role">Lab Director</p>
-      <p class="team-card-bio">Short bio description</p>
+      <p class="team-card-bio">Marina Kogan is an Assistant Professor at Kahlert School of Computing at University of Utah. She works in the areas of social computing, crisis informatics, and human-centered data science. Her background in Sociology and Computer Science informs her focus on studying online coordination, collective problem-solving, and information flows during disruption events such as disasters arising from natural hazards, epidemics, and political crises. Her most recent work analyzes collective sensemaking, coordination, and information flows in instances of mis/disinformation, conspiracy theories, and state-sponsored information operations.</p>
     </div>
   </div>
 </section>
