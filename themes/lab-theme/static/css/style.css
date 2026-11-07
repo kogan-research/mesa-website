@@ -406,6 +406,22 @@ body.page-home main {
     background-position: center;
 }
 
+.hero--publication-detail .publication-banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero--publication-detail {
+    min-height: 0;
+    padding: 10rem 0 1.5rem;
+}
+
+.hero--publication-detail .hero-inner--left {
+    padding-bottom: 0;
+}
+
 .home-content .container {
     max-width: 900px;
 }
