@@ -67,6 +67,10 @@ heroImage: "/images/mesa_about_background.png"
   <h2>MESA Lab Alumni</h2>
   <div class="alumni-grid">
     <div class="alumni-row">
+      <span class="alumni-name"><a href="https://mlisnic.github.io/">Maxim Lisnic</a></span>
+      <span class="alumni-role">Ph.D. in Computing, University of Utah, 2025</span>
+    </div>
+    <div class="alumni-row">
       <span class="alumni-name">Name</span>
       <span class="alumni-role">Description</span>
     </div>
