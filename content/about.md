@@ -44,9 +44,9 @@ heroImage: "/images/mesa_about_background.png"
       <div class="team-card-image team-card-image--photo">
         {{< img src="images/team/tg.jpg" alt="Thomas Greger" class="team-card-photo" >}}
       </div>
-      <h3>Thomas Greger</h3>
+      <h3><a href="https://www.greger.us/">Thomas Greger</a></h3>
       <p class="team-card-role">PhD Student</p>
-      <p class="team-card-bio">Short bio description</p>
+      <p class="team-card-bio">Thomas is a PhD student in the Kahlert School of Computing at the University of Utah, advised by Marina Kogan. His research sits at the intersection of data science and human-computer interaction, with a focus on crisis informatics. He studies how online discourse evolves during prolonged crises and develops methods to detect topic shifts in longitudinal social media data.</p>
     </div>
   </div>
 </section>
