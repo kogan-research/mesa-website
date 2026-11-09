@@ -1,0 +1,25 @@
+---
+title: "Working Together (to Undermine Democratic Institutions): Challenging the Social Bot Paradigm in SSIO Research"
+layout: "publication-single"
+image: "/images/pubs/working-together.png"
+doi: "https://doi.org/10.1145/361003"
+citation: "Polychronis, C., & Kogan, M. (2023). Working together (to undermine democratic institutions): Challenging the social bot paradigm in SSIO research. Proceedings of the ACM on Human-Computer Interaction, 7(CSCW2), 1-30."
+bibtex: |
+  @article{polychronis2023working,
+  title={Working together (to undermine democratic institutions): Challenging the social bot paradigm in SSIO research},
+  author={Polychronis, Cole and Kogan, Marina},
+  journal={Proceedings of the ACM on Human-Computer Interaction},
+  volume={7},
+  number={CSCW2},
+  pages={1--30},
+  year={2023},
+  publisher={ACM, New York, NY, USA}
+    }
+resources:
+  - label: "Publisher / DOI"
+    url: "https://doi.org/10.1145/361003"
+---
+
+## Overview
+
+**Abstract:** Unlike most other forms of coordinated, inauthentic behavior occurring online, the goals of state-sponsored information operations, or SSIOs, are often complex and multifaceted. These goals range from flooding conversations with a certain narrative, to increasing the public's engagement with news sources of questionable quality, to stoking tensions between ideologically opposed groups to weaken public trust. The prevailing theoretical framework for understanding SSIOs is to treat them as a social botnet: a behaviorally homogeneous cluster of coordinated activity. However, the social bot framework is both at odds with some of the behaviors observed in early SSIOs and more broadly with the wide swathe of goals these operations set out to accomplish. To examine the fit of the social bot framework in the SSIO context, we develop a novel bag-of-words based method for clustering and describing user activity traces. Applying this method to a comprehensive repository of SSIOs conducted on Twitter over the last decade, we find that SSIOs violate both the core assumption of the social bot framework, and how it is operationalized in practical work. Instead, we find that SSIOs exhibit a clear division of labor and propose cooperative work with social roles as a more effective theoretical framework for understanding SSIOs. Through applying this framework, we find that the roles that SSIO agents take on have become more stable and simple over time, which holds substantial implications for developing methods for detection of these operations in the wild.
