@@ -29,6 +29,11 @@ publication_sections:
         url: "https://example.com/paper3"
         authors: "Author One, Author Two"
         venue: "Journal of Example, 2024"
+      - title: "Working Together (to Undermine Democratic Institutions): Challenging the Social Bot Paradigm in   SSIO Research"
+        image: "/images/pubs/working-together.png"
+        url: "/publications/working-together-cscw2023/"
+        authors: "Cole Polychronis, Marina Kogan"
+        venue: "CSCW 2023, Minneapolis, USA."
   - heading: "Selected Posters"
     items:
       - title: "From Election To Insurrection: A Tool For Scoping Longitudinal Data Based on Topic Shifts"
