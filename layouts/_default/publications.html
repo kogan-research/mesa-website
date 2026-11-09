@@ -23,7 +23,7 @@
             <li class="publication-item">
                 {{ if .image }}
                 <div class="publication-thumb">
-                    {{ if .url }}<a href="{{ .url }}" aria-hidden="true" tabindex="-1">{{ end }}
+                    {{ if .url }}<a href="{{ .url | relURL }}" aria-hidden="true" tabindex="-1">{{ end }}
                     <img src="{{ .image | relURL }}" alt="" loading="lazy" width="160" height="100">
                     {{ if .url }}</a>{{ end }}
                 </div>
@@ -31,7 +31,7 @@
                 <div class="publication-body">
                     <p class="publication-authors">{{ .authors | safeHTML }}</p>
                     <p class="publication-title">
-                        {{ if .url }}<a href="{{ .url }}">{{ end }}{{ .title }}{{ if .url }}</a>{{ end }}
+                        {{ if .url }}<a href="{{ .url | relURL }}">{{ end }}{{ .title }}{{ if .url }}</a>{{ end }}
                     </p>
                     {{ with .venue }}<p class="publication-venue">{{ . }}</p>{{ end }}
                     {{ with .award }}
