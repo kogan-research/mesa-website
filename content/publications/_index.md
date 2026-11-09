@@ -73,6 +73,11 @@ publication_sections:
         venue: "CHI 2023, pp. 1–21"
   - heading: "Selected Posters"
     items:
+      - title: "Intervention Framework Against Visualization Recontextualization"
+        image: "/images/pubs/intervention-framework.png"
+        url: "/publications/intervention-framework-poster/"
+        authors: "Khandaker Abrar Nadib, Marina Kogan, Alexander Lex"
+        venue: "One-U Responsible AI Initiative Annual Symposium 2026"
       - title: "From Election To Insurrection: A Tool For Scoping Longitudinal Data Based on Topic Shifts"
         image: "/images/pubs/ScopingLongitudinalDataCSS2023.png"
         url: "/publications/scoping-longitudinal-data-css2023/"
