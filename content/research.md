@@ -1,11 +1,13 @@
 ---
 title: "Research"
 layout: "research"
+draft: true
 heroKicker: "OUR RESEARCH"
 heroTitle: "Understanding human-centered computing"
 pillarsTitle: "Pillars in Our Research"
 heroImage: "/images/mesa_research.png"
 ---
+
 
 <div class="pillar-rows">
   <div class="pillar-row pillar-row--sand">
